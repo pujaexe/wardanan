@@ -508,7 +508,7 @@ function PlasmicHomepage__RenderFunc(props) {
                             sty.embedHtml__mcyNk
                           )}
                           code={
-                            '<input type="radio" id="html" name="fav_language" value="HTML">\n<label for="html">Yes! wouldn’t miss it for the world!</label><br>\n<input type="radio" id="css" name="fav_language" value="CSS">\n<label for="css">Will be celebrating from a far!</label>'
+                            '<fieldset id="group1">\n<input type="radio" id="hadir" name="data[status]" value="HTML">\n<label for="html">Yes! wouldn’t miss it for the world!</label><br>\n<input type="radio" id="tidak" name="data[status]" value="CSS">\n<label for="css">Will be celebrating from a far!</label>\n</fieldset>'
                           }
                         />
                       </p.Stack>
@@ -565,7 +565,7 @@ function PlasmicHomepage__RenderFunc(props) {
                                   "__wab_instance",
                                   sty.option__lbj2Y
                                 )}
-                                value={"value1"}
+                                value={"1"}
                               >
                                 {"1"}
                               </Select__Option>
@@ -575,7 +575,7 @@ function PlasmicHomepage__RenderFunc(props) {
                                   "__wab_instance",
                                   sty.option__sSjI7
                                 )}
-                                value={"value2"}
+                                value={"2"}
                               >
                                 {"2"}
                               </Select__Option>
@@ -614,7 +614,7 @@ function PlasmicHomepage__RenderFunc(props) {
                                   "__wab_instance",
                                   sty.option___0Vb7Q
                                 )}
-                                value={"value0"}
+                                value={"0"}
                               >
                                 {"No Kids"}
                               </Select__Option>
@@ -624,7 +624,7 @@ function PlasmicHomepage__RenderFunc(props) {
                                   "__wab_instance",
                                   sty.option__rUdbg
                                 )}
-                                value={"value1"}
+                                value={"1"}
                               >
                                 {"1"}
                               </Select__Option>
@@ -634,7 +634,7 @@ function PlasmicHomepage__RenderFunc(props) {
                                   "__wab_instance",
                                   sty.option__hoOcY
                                 )}
-                                value={"value2"}
+                                value={"2"}
                               >
                                 {"2"}
                               </Select__Option>
@@ -644,7 +644,7 @@ function PlasmicHomepage__RenderFunc(props) {
                                   "__wab_instance",
                                   sty.option__lspO
                                 )}
-                                value={"value3"}
+                                value={"3"}
                               >
                                 {"3"}
                               </Select__Option>
