@@ -1,0 +1,307 @@
+{
+  "platform": "nextjs",
+  "code": {
+    "lang": "js",
+    "scheme": "blackbox",
+    "reactRuntime": "classic"
+  },
+  "style": {
+    "scheme": "css-modules",
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.css"
+  },
+  "images": {
+    "scheme": "public-files",
+    "publicDir": "../public",
+    "publicUrlPrefix": "/"
+  },
+  "tokens": {
+    "scheme": "theo",
+    "tokensFilePath": "plasmic-tokens.theo.json"
+  },
+  "srcDir": "components",
+  "defaultPlasmicDir": "./plasmic",
+  "projects": [
+    {
+      "projectId": "caTPwKxj5ZrD9LQ7DMdK4Z",
+      "projectApiToken": "vXGGQpdi9fhcncabBdg8DcMRUbkz0iRW6HS1jzQufQR6QH0MasPwr9SX7ap4SsK3xXwwXmzZtglWGe0Rm2nw",
+      "projectName": "plasmic-basic-components",
+      "version": "3.3.0",
+      "cssFilePath": "plasmic/plasmic_basic_components/plasmic_plasmic_basic_components.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "",
+      "codeComponents": [
+        {
+          "id": "CMDBvOhaI4s",
+          "name": "Iframe",
+          "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
+        },
+        {
+          "id": "RhitNJW5Zu-",
+          "name": "Video",
+          "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
+        },
+        {
+          "id": "PKldDYkH42",
+          "name": "Embed",
+          "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
+        },
+        {
+          "id": "D4RbnlpRXg3",
+          "name": "DataProvider",
+          "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
+        }
+      ]
+    },
+    {
+      "projectId": "tBS53v6Mrk9Mm1a7gv3SHh",
+      "projectApiToken": "bWGIXIdnSdRJPqGjUET2tsYtfso5GOHYcsVkOfql1CG3akubKexAZcqGCgnrVMZKv1PHbHhn2eHReCPVsJow",
+      "projectName": "wardanan",
+      "version": "latest",
+      "cssFilePath": "plasmic/wardanan/plasmic_wardanan.module.css",
+      "components": [
+        {
+          "id": "JIbrzkyvv9ZNB",
+          "name": "Homepage",
+          "type": "managed",
+          "projectId": "tBS53v6Mrk9Mm1a7gv3SHh",
+          "renderModuleFilePath": "plasmic/wardanan/PlasmicHomepage.jsx",
+          "importSpec": {
+            "modulePath": "../pages/index.jsx"
+          },
+          "cssFilePath": "plasmic/wardanan/PlasmicHomepage.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "7sjzLtUSb4FTm",
+          "name": "TextInput",
+          "type": "managed",
+          "projectId": "tBS53v6Mrk9Mm1a7gv3SHh",
+          "renderModuleFilePath": "plasmic/wardanan/PlasmicTextInput.jsx",
+          "importSpec": {
+            "modulePath": "TextInput.jsx"
+          },
+          "cssFilePath": "plasmic/wardanan/PlasmicTextInput.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "text-input"
+        },
+        {
+          "id": "tYYoIJpxgziB1",
+          "name": "Switch",
+          "type": "managed",
+          "projectId": "tBS53v6Mrk9Mm1a7gv3SHh",
+          "renderModuleFilePath": "plasmic/wardanan/PlasmicSwitch.jsx",
+          "importSpec": {
+            "modulePath": "Switch.jsx"
+          },
+          "cssFilePath": "plasmic/wardanan/PlasmicSwitch.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "switch"
+        },
+        {
+          "id": "Y87YY94o05oIQ",
+          "name": "Select",
+          "type": "managed",
+          "projectId": "tBS53v6Mrk9Mm1a7gv3SHh",
+          "renderModuleFilePath": "plasmic/wardanan/PlasmicSelect.jsx",
+          "importSpec": {
+            "modulePath": "Select.jsx"
+          },
+          "cssFilePath": "plasmic/wardanan/PlasmicSelect.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "select"
+        },
+        {
+          "id": "uRFWVVGvGVpFl",
+          "name": "Select__Option",
+          "type": "managed",
+          "projectId": "tBS53v6Mrk9Mm1a7gv3SHh",
+          "renderModuleFilePath": "plasmic/wardanan/PlasmicSelect__Option.jsx",
+          "importSpec": {
+            "modulePath": "Select__Option.jsx"
+          },
+          "cssFilePath": "plasmic/wardanan/PlasmicSelect__Option.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "select-option"
+        },
+        {
+          "id": "0I7ZSf1d52uV95",
+          "name": "Select__OptionGroup",
+          "type": "managed",
+          "projectId": "tBS53v6Mrk9Mm1a7gv3SHh",
+          "renderModuleFilePath": "plasmic/wardanan/PlasmicSelect__OptionGroup.jsx",
+          "importSpec": {
+            "modulePath": "Select__OptionGroup.jsx"
+          },
+          "cssFilePath": "plasmic/wardanan/PlasmicSelect__OptionGroup.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "select-option-group"
+        },
+        {
+          "id": "Z5Fh0EaV08nY3B",
+          "name": "Select__Overlay",
+          "type": "managed",
+          "projectId": "tBS53v6Mrk9Mm1a7gv3SHh",
+          "renderModuleFilePath": "plasmic/wardanan/PlasmicSelect__Overlay.jsx",
+          "importSpec": {
+            "modulePath": "Select__Overlay.jsx"
+          },
+          "cssFilePath": "plasmic/wardanan/PlasmicSelect__Overlay.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "triggered-overlay"
+        },
+        {
+          "id": "dr59HzdIu2I8GO",
+          "name": "Button",
+          "type": "managed",
+          "projectId": "tBS53v6Mrk9Mm1a7gv3SHh",
+          "renderModuleFilePath": "plasmic/wardanan/PlasmicButton.jsx",
+          "importSpec": {
+            "modulePath": "Button.jsx"
+          },
+          "cssFilePath": "plasmic/wardanan/PlasmicButton.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "button"
+        },
+        {
+          "id": "HJMTQompZz4q-H",
+          "name": "Checkbox",
+          "type": "managed",
+          "projectId": "tBS53v6Mrk9Mm1a7gv3SHh",
+          "renderModuleFilePath": "plasmic/wardanan/PlasmicCheckbox.jsx",
+          "importSpec": {
+            "modulePath": "Checkbox.jsx"
+          },
+          "cssFilePath": "plasmic/wardanan/PlasmicCheckbox.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "checkbox"
+        }
+      ],
+      "icons": [
+        {
+          "id": "ERt6eDxcGZvAOd",
+          "name": "SearchsvgIcon",
+          "moduleFilePath": "plasmic/wardanan/icons/PlasmicIcon__Searchsvg.jsx"
+        },
+        {
+          "id": "t0ZhyR3Q1GULpD",
+          "name": "ChecksvgIcon",
+          "moduleFilePath": "plasmic/wardanan/icons/PlasmicIcon__Checksvg.jsx"
+        },
+        {
+          "id": "gWkV-9_Wu6qnkQ",
+          "name": "ChevronDownsvgIcon",
+          "moduleFilePath": "plasmic/wardanan/icons/PlasmicIcon__ChevronDownsvg.jsx"
+        },
+        {
+          "id": "IexVOtxrBj0lPe",
+          "name": "ChevronUpsvgIcon",
+          "moduleFilePath": "plasmic/wardanan/icons/PlasmicIcon__ChevronUpsvg.jsx"
+        },
+        {
+          "id": "GmUASqrUBLQeud",
+          "name": "IconIcon",
+          "moduleFilePath": "plasmic/wardanan/icons/PlasmicIcon__Icon.jsx"
+        },
+        {
+          "id": "w3QH36CuPqGeAy",
+          "name": "MailEmailRemoveMinusSvgrepoComsvgIcon",
+          "moduleFilePath": "plasmic/wardanan/icons/PlasmicIcon__MailEmailRemoveMinusSvgrepoComsvg.jsx"
+        },
+        {
+          "id": "NWiiRNpe8hgd-U",
+          "name": "DressSvgrepoComsvgIcon",
+          "moduleFilePath": "plasmic/wardanan/icons/PlasmicIcon__DressSvgrepoComsvg.jsx"
+        },
+        {
+          "id": "4AvOzJXUesFrGH",
+          "name": "DressSvgrepoCom1SvgIcon",
+          "moduleFilePath": "plasmic/wardanan/icons/PlasmicIcon__DressSvgrepoCom1Svg.jsx"
+        },
+        {
+          "id": "iCOkNF_AFWyNzl",
+          "name": "PiggybankPiggyBankDeleteSvgrepoComsvgIcon",
+          "moduleFilePath": "plasmic/wardanan/icons/PlasmicIcon__PiggybankPiggyBankDeleteSvgrepoComsvg.jsx"
+        },
+        {
+          "id": "sU2Jpr2-q9pgnb",
+          "name": "SquaresvgIcon",
+          "moduleFilePath": "plasmic/wardanan/icons/PlasmicIcon__Squaresvg.jsx"
+        },
+        {
+          "id": "BLRaUZ4EtJ7C-B",
+          "name": "SquareCheckFilledsvgIcon",
+          "moduleFilePath": "plasmic/wardanan/icons/PlasmicIcon__SquareCheckFilledsvg.jsx"
+        },
+        {
+          "id": "eHWsqAVdzRoJN7",
+          "name": "SquareMinussvgIcon",
+          "moduleFilePath": "plasmic/wardanan/icons/PlasmicIcon__SquareMinussvg.jsx"
+        }
+      ],
+      "images": [
+        {
+          "id": "duBAYPDEjjmY1u",
+          "name": "bg-min.png",
+          "filePath": "../public/plasmic/wardanan/images/bgMinpng.png"
+        },
+        {
+          "id": "OWyurBnwGyAWu5",
+          "name": "bunga1.png",
+          "filePath": "../public/plasmic/wardanan/images/bunga1Png.png"
+        },
+        {
+          "id": "whIA4GWfWY67Ds",
+          "name": "bunga2.png",
+          "filePath": "../public/plasmic/wardanan/images/bunga2Png.png"
+        },
+        {
+          "id": "rwXuQMDo_4AVGO",
+          "name": "bunga1.png 2",
+          "filePath": "../public/plasmic/wardanan/images/bunga1Png2.png"
+        },
+        {
+          "id": "6av2gxzbzEe7ce",
+          "name": "bunga2.png 2",
+          "filePath": "../public/plasmic/wardanan/images/bunga2Png2.png"
+        }
+      ],
+      "indirect": false,
+      "globalContextsFilePath": "",
+      "codeComponents": [
+        {
+          "id": "-1MTp0fUGgANX",
+          "name": "PlasmicHead",
+          "componentImportPath": "@plasmicapp/react-web"
+        }
+      ]
+    }
+  ],
+  "globalVariants": {
+    "variantGroups": [
+      {
+        "id": "VI7y4TYSBPJcNx",
+        "name": "Screen",
+        "projectId": "tBS53v6Mrk9Mm1a7gv3SHh",
+        "contextFilePath": "plasmic/wardanan/PlasmicGlobalVariant__Screen.jsx"
+      }
+    ]
+  },
+  "wrapPagesWithGlobalContexts": true,
+  "nextjsConfig": {
+    "pagesDir": "../pages"
+  },
+  "cliVersion": "0.1.186",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.186/dist/plasmic.schema.json"
+}

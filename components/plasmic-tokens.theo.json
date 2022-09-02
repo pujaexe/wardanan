@@ -1,0 +1,19 @@
+{
+  "props": [
+    {
+      "name": "customviewhigh",
+      "type": "spacing",
+      "value": "100vh",
+      "category": "spacing",
+      "meta": {
+        "projectId": "tBS53v6Mrk9Mm1a7gv3SHh",
+        "id": "tfRPXDb52YxtEm"
+      }
+    }
+  ],
+  "global": {
+    "meta": {
+      "source": "plasmic.app"
+    }
+  }
+}
