@@ -750,8 +750,9 @@
   font-weight: 600;
   min-width: 0;
 }
-.checkbox:global(.__wab_instance) {
+.embedHtml:global(.__wab_instance) {
   max-width: 100%;
+  object-fit: cover;
   position: relative;
 }
 .freeBox__q2E79 {

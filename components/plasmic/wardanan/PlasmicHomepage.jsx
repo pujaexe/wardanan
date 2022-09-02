@@ -20,7 +20,7 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import TextInput from "../../TextInput"; // plasmic-import: 7sjzLtUSb4FTm/component
-import Checkbox from "../../Checkbox"; // plasmic-import: HJMTQompZz4q-H/component
+import { Embed } from "@plasmicpkgs/plasmic-basic-components"; // plasmic-import: PKldDYkH42/codeComponent
 import Select from "../../Select"; // plasmic-import: Y87YY94o05oIQ/component
 import Select__Option from "../../Select__Option"; // plasmic-import: uRFWVVGvGVpFl/component
 import Button from "../../Button"; // plasmic-import: dr59HzdIu2I8GO/component
@@ -496,10 +496,16 @@ function PlasmicHomepage__RenderFunc(props) {
                           {"Will you be attending?"}
                         </div>
 
-                        <Checkbox
-                          data-plasmic-name={"checkbox"}
-                          data-plasmic-override={overrides.checkbox}
-                          className={classNames("__wab_instance", sty.checkbox)}
+                        <Embed
+                          data-plasmic-name={"embedHtml"}
+                          data-plasmic-override={overrides.embedHtml}
+                          className={classNames(
+                            "__wab_instance",
+                            sty.embedHtml
+                          )}
+                          code={
+                            '<input type="radio" id="html" name="fav_language" value="HTML">\n<label for="html">Yes! wouldn’t miss it for the world!</label><br>\n<input type="radio" id="css" name="fav_language" value="CSS">\n<label for="css">Will be celebrating from a far!</label>'
+                          }
                         />
                       </p.Stack>
                     ) : null}
@@ -674,7 +680,7 @@ const PlasmicDescendants = {
     "h5",
     "textInput",
     "textbox",
-    "checkbox",
+    "embedHtml",
     "button"
   ],
 
@@ -688,7 +694,7 @@ const PlasmicDescendants = {
     "h5",
     "textInput",
     "textbox",
-    "checkbox",
+    "embedHtml",
     "button"
   ],
 
@@ -699,7 +705,7 @@ const PlasmicDescendants = {
   dresscode: ["dresscode"],
   h5: ["h5"],
   textInput: ["textInput", "textbox"],
-  checkbox: ["checkbox"],
+  embedHtml: ["embedHtml"],
   button: ["button"]
 };
 
@@ -745,7 +751,7 @@ export const PlasmicHomepage = Object.assign(
     dresscode: makeNodeComponent("dresscode"),
     h5: makeNodeComponent("h5"),
     textInput: makeNodeComponent("textInput"),
-    checkbox: makeNodeComponent("checkbox"),
+    embedHtml: makeNodeComponent("embedHtml"),
     button: makeNodeComponent("button"),
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,
