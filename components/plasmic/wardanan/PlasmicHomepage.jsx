@@ -409,9 +409,14 @@ function PlasmicHomepage__RenderFunc(props) {
 
                 <div className={classNames(projectcss.all, sty.freeBox__o8RcH)}>
                   <p.Stack
-                    as={"div"}
+                    as={"form"}
+                    data-plasmic-name={"form"}
+                    data-plasmic-override={overrides.form}
                     hasGap={true}
-                    className={classNames(projectcss.all, sty.freeBox__sO3DL)}
+                    action={"https://sheetdb.io/api/v1/hzcottzyqnxbe"}
+                    className={classNames(projectcss.all, sty.form)}
+                    id={"sheetdb-form"}
+                    method={"post"}
                   >
                     {true ? (
                       <p.Stack
@@ -474,6 +479,7 @@ function PlasmicHomepage__RenderFunc(props) {
                             "__wab_instance",
                             sty.textInput
                           )}
+                          name={"data[name]"}
                         />
                       </p.Stack>
                     ) : null}
@@ -497,11 +503,9 @@ function PlasmicHomepage__RenderFunc(props) {
                         </div>
 
                         <Embed
-                          data-plasmic-name={"embedHtml"}
-                          data-plasmic-override={overrides.embedHtml}
                           className={classNames(
                             "__wab_instance",
-                            sty.embedHtml
+                            sty.embedHtml__mcyNk
                           )}
                           code={
                             '<input type="radio" id="html" name="fav_language" value="HTML">\n<label for="html">Yes! wouldn’t miss it for the world!</label><br>\n<input type="radio" id="css" name="fav_language" value="CSS">\n<label for="css">Will be celebrating from a far!</label>'
@@ -553,7 +557,7 @@ function PlasmicHomepage__RenderFunc(props) {
                                 sty.select__xpOpz
                               )}
                               defaultValue={""}
-                              name={""}
+                              name={"data[adult]"}
                               placeholder={"Select Adult"}
                             >
                               <Select__Option
@@ -602,6 +606,7 @@ function PlasmicHomepage__RenderFunc(props) {
                                 "__wab_instance",
                                 sty.select__ihp9S
                               )}
+                              name={"data[kids]"}
                               placeholder={"Select Kids"}
                             >
                               <Select__Option
@@ -662,6 +667,13 @@ function PlasmicHomepage__RenderFunc(props) {
               </div>
             </div>
           </div>
+
+          <Embed
+            className={classNames("__wab_instance", sty.embedHtml__jgXFt)}
+            code={
+              "<script>\n            var form = document.getElementById('sheetdb-form');\n        form.addEventListener(\"submit\", e => {\n          e.preventDefault();\n          fetch(form.action, {\n              method : \"POST\",\n              body: new FormData(document.getElementById(\"sheetdb-form\")),\n          }).then(\n              response => response.json()\n          ).then((html) => {\n            // you can put any JS code here\n            window.open('page2.html', '_blank');\n\n          });\n        });\n        </script>"
+            }
+          />
         </div>
       </div>
     </React.Fragment>
@@ -677,10 +689,10 @@ const PlasmicDescendants = {
     "noteWrapper",
     "piggybank",
     "dresscode",
+    "form",
     "h5",
     "textInput",
     "textbox",
-    "embedHtml",
     "button"
   ],
 
@@ -691,10 +703,10 @@ const PlasmicDescendants = {
     "noteWrapper",
     "piggybank",
     "dresscode",
+    "form",
     "h5",
     "textInput",
     "textbox",
-    "embedHtml",
     "button"
   ],
 
@@ -703,9 +715,9 @@ const PlasmicDescendants = {
   noteWrapper: ["noteWrapper", "piggybank", "dresscode"],
   piggybank: ["piggybank"],
   dresscode: ["dresscode"],
+  form: ["form", "h5", "textInput", "textbox", "button"],
   h5: ["h5"],
   textInput: ["textInput", "textbox"],
-  embedHtml: ["embedHtml"],
   button: ["button"]
 };
 
@@ -749,9 +761,9 @@ export const PlasmicHomepage = Object.assign(
     noteWrapper: makeNodeComponent("noteWrapper"),
     piggybank: makeNodeComponent("piggybank"),
     dresscode: makeNodeComponent("dresscode"),
+    form: makeNodeComponent("form"),
     h5: makeNodeComponent("h5"),
     textInput: makeNodeComponent("textInput"),
-    embedHtml: makeNodeComponent("embedHtml"),
     button: makeNodeComponent("button"),
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,
